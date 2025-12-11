@@ -19,7 +19,7 @@ function HeroSection() {
                     <img src="/images/works-with3.png" alt="img3" className="ms-4" />
                 </div>
                 <div className="ratings">
-                    <div className="d-flex flex-row align-items-center me-5">
+                    <div className="d-flex flex-row align-items-center me-0 me-lg-5">
                         <div className="d-flex flex-row align-items-center ratings-playstore-icon me-2">
                             <img src="/images/chrome-logo.png" alt="ratings" className="ratings-icon mx-auto" />
                         </div>

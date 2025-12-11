@@ -1,14 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, NavLink, Navigate } from "react-router-dom";
-import FigmaDesign from "./components/FigmaDesign";
+import FigmaDesign from "./FigmaDesign";
 
 function App() {
   return (
     <div className="=w-screen">
       <Router>
         <div className="min-h-screen">
-          <div class="position-fixed top-50 start-0 p-3 border bg-white translate-middle-y d-flex flex-column gap-3 z-3">
-
+          <div className="position-fixed top-50 start-0 p-3 border bg-white translate-middle-y d-flex flex-column gap-3 z-3">
             <a
               href="https://intricare-react-task.vercel.app/"
               class="px-4 py-2 rounded fw-semibold text-decoration-none text-primary bg-blue hover-bg-primary"

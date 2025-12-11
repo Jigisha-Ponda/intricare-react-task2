@@ -24,7 +24,7 @@ body {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
-
+/* Navbar */
 .navbar {
   box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.1);
   min-height: 80px;
@@ -33,7 +33,6 @@ body {
 .nav-link {
   font-family: "Exo 2", sans-serif;
   font-weight: 600;
-  font-style: SemiBold;
   font-size: 16px;
   letter-spacing: 0%;
   vertical-align: middle;
@@ -45,7 +44,6 @@ body {
   background-color: rgba(45, 150, 188, 1);
   font-family: "Exo 2", sans-serif;
   font-weight: 600;
-  font-style: SemiBold;
   font-size: 14px;
   line-height: 28px;
   color: #fff;
@@ -64,7 +62,6 @@ body {
   background-color: #fff;
   font-family: "Exo 2", sans-serif;
   font-weight: 600;
-  font-style: SemiBold;
   font-size: 14px;
   line-height: 28px;
   color: rgba(45, 150, 188, 1);
@@ -75,7 +72,6 @@ body {
   background-color: rgba(45, 150, 188, .1);
   font-family: "Exo 2", sans-serif;
   font-weight: 600;
-  font-style: SemiBold;
   font-size: 14px;
   line-height: 28px;
   color: rgba(45, 150, 188, 1);
@@ -86,6 +82,7 @@ body {
   width: 20px;
 }
 
+/* Hero Section */
 .hero-section {
   background-image: url('/public/images/hero-banner.png');
   background-position: center;
@@ -107,7 +104,6 @@ body {
   display: inline-flex;
   font-family: "Exo 2", sans-serif;
   font-weight: 400;
-  font-style: Regular;
   font-size: 13.62px;
   line-height: 23.83px;
   color: rgba(99, 101, 126, 1);
@@ -116,7 +112,6 @@ body {
 .hero-section .heading {
   font-family: "Exo 2", sans-serif;
   font-weight: 600;
-  font-style: SemiBold;
   font-size: 58px;
   line-height: 69px;
   text-align: center;
@@ -140,7 +135,6 @@ body {
 .hero-section .content {
   font-family: "Exo 2", sans-serif;
   font-weight: 600;
-  font-style: SemiBold;
   font-size: 19px;
   line-height: 28px;
   text-align: center;
@@ -162,7 +156,6 @@ body {
   align-items: center;
   font-family: "Exo 2", sans-serif;
   font-weight: 500;
-  font-style: Medium;
   font-size: 20px;
   line-height: 28px;
 }
@@ -208,7 +201,6 @@ body {
   color: rgba(255, 255, 255, 1);
   font-family: "Exo 2", sans-serif;
   font-weight: 500;
-  font-style: Medium;
   font-size: 16px;
 }
 
@@ -216,7 +208,6 @@ body {
   color: rgba(228, 228, 228, 1);
   font-family: "Exo 2", sans-serif;
   font-weight: 400;
-  font-style: Regular;
   font-size: 12px;
 }
 
@@ -232,8 +223,189 @@ body {
   color: rgba(36, 36, 36, 1);
   font-family: "Exo 2", sans-serif;
   font-weight: 600;
-  font-style: SemiBold;
   font-size: 16px;
+}
+
+/* Feature Section */
+.feature-section {
+  padding: 50px 0;
+  border-bottom: 1px solid rgba(241, 241, 241, 1);
+}
+
+.feature-section div {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.feature-section div span {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Daily Challenges Section */
+.challenges-section {
+  padding: 50px 0 100px 0;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.challenges-section .heading {
+  text-align: center;
+}
+
+.challenges-section .challenge-1 {
+  padding: 20px;
+  background-color: rgba(255, 247, 248, 1);
+  border-radius: 18px;
+}
+
+.challenges-section .challenge-2 {
+  padding: 20px;
+  box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.2);
+  border-radius: 18px;
+}
+
+.challenges-section .challenge-1 .head {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: rgba(210, 75, 104, 1);
+}
+
+.challenges-section .challenge-2 .head {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: rgba(9, 119, 55, 1);
+}
+
+.challenges-section .challenge-2 .green-badge {
+  background-color: rgba(230, 255, 241, 1);
+  color: rgba(9, 119, 55, 1);
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  border-radius: 24.7px;
+  padding: 5px 10px;
+}
+
+.challenges-section .challenge-1 .red-badge {
+  background-color: rgba(255, 220, 212, 1);
+  color: rgba(255, 76, 81, 1);
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  border-radius: 24.7px;
+  padding: 5px 10px;
+}
+
+.challenges-section .subhead {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgba(38, 38, 38, 1);
+}
+
+.challenges-section .content {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(76, 76, 76, 1);
+  margin-top: 7px;
+  width: 85%;
+}
+
+.custom-list {
+  list-style: none;
+  position: relative;
+  padding-left: 30px;
+  margin-top: 20px;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-top: 20px;
+  min-height: 32px;
+  /* ensures space for bullet */
+}
+
+.custom-list li::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url('/public/images/bullet-icon.png') no-repeat center/contain;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-list2 {
+  padding-left: 0;
+}
+
+.custom-list2 li {
+  list-style: none;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 20px;
+}
+
+/* 1st bullet image */
+.custom-list2 li:nth-child(1)::before,
+.custom-list2 li:nth-child(2)::before,
+.custom-list2 li:nth-child(3)::before,
+.custom-list2 li:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  /* center vertically */
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Different images for each li */
+.custom-list2 li:nth-child(1)::before {
+  background-image: url('/public/images/bullet-point1.png');
+}
+
+.custom-list2 li:nth-child(2)::before {
+  background-image: url('/public/images/bullet-point2.png');
+}
+
+.custom-list2 li:nth-child(3)::before {
+  background-image: url('/public/images/bullet-point3.png');
+}
+
+.custom-list2 li:nth-child(4)::before {
+  background-image: url('/public/images/bullet-point4.png');
+}
+
+.leadcrm-btn {
+  background-color: rgba(179, 252, 106, 1);
+  color: rgba(0, 0, 0, 1);
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  padding: 12px 25px;
+}
+
+.save-hours-img {
+  position: absolute;
+  bottom: -40px;
+  height: 150px;
+  width: auto;
 }
 
 @media(max-width:768px) {
@@ -244,6 +416,10 @@ body {
 
   .rating .me-5 {
     margin-right: 0px !important;
+  }
+
+  .save-hours-img {
+    display: none;
   }
 }
 
