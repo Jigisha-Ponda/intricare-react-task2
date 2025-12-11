@@ -6,7 +6,7 @@ function DailyChallenges() {
             <div className="container">
                 <h2 className="heading">Every LinkedIn Prospector faces these daily challenges</h2>
                 <div className="row mt-5">
-                    <div className="col-md-6">
+                    <div className="col-lg-6">
                         <div className="challenge-1">
                             <img src="/images/challenge1.png" alt="challenge1" className="img-fluid w-100" />
                             <h6 className="mt-3 mb-0 head">Without LeadCRM</h6>
@@ -44,7 +44,7 @@ function DailyChallenges() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-lg-6">
                         <div className="challenge-2">
                             <img src="/images/challenge2.png" alt="challenge1" className="img-fluid w-100" />
                             <div className="d-flex flex-row align-items-center mt-3">

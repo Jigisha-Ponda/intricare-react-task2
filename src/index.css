@@ -401,11 +401,75 @@ body {
   padding: 12px 25px;
 }
 
+.btn-arrow-icon{
+  height:20px;
+}
+
 .save-hours-img {
   position: absolute;
   bottom: -40px;
   height: 150px;
   width: auto;
+}
+
+/* How It Works Section */
+.how-works-section{
+  background-color: rgba(234, 239, 250, 1);
+  padding:40px 0;
+}
+.how-works-section .heading{
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.how-works-section .content{
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color:rgba(76, 76, 76, 1);
+}
+
+.how-works-section .content span{
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color:rgba(76, 76, 76, 1);
+}
+
+.how-works-section .card{
+  border-radius: 12px;
+  border:none;
+  /* padding:20px; */
+}
+
+.how-works-section .card-details{
+  padding:20px;
+}
+
+.how-works-section .card .card-index{
+  width: auto;
+  height: 80px;       
+  object-fit: contain; 
+  display: block;
+  margin: 0 auto 15px; 
+}
+
+.how-works-section .card .card-head{
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color:rgba(9, 15, 78, 1);
+  text-align: center;
+  margin-top:20px;
+}
+
+.how-works-section .card .card-content{
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color:rgba(76, 76, 76, 1);
+  text-align: center;
 }
 
 @media(max-width:768px) {

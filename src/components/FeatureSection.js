@@ -4,7 +4,7 @@ function FeatureSection() {
   return (
     <section id="feature-section" className="feature-section">
         <div className="container">
-            <div className="d-flex flex-column flex-md-row align-items-center justify-content-between">
+            <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between">
                 <div>
                     <img src="/images/contact-access.png" alt="contact-access" className="me-3"/>
                     Access to <span>700M+ Contacts</span>
