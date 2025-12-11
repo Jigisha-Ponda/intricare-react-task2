@@ -5,9 +5,242 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Exo 2", sans-serif !important;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+.navbar {
+  box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.1);
+  min-height: 80px;
+}
+
+.nav-link {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 16px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: rgba(34, 34, 34, 1) !important;
+  margin: 0 10px;
+}
+
+.primary-btn {
+  background-color: rgba(45, 150, 188, 1);
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 14px;
+  line-height: 28px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.primary-btn:hover {
+  border: 1px solid rgba(45, 150, 188, 1);
+  background-color: #fff;
+  color: rgba(45, 150, 188, 1);
+}
+
+.primary-outline-btn {
+  border: 1px solid rgba(45, 150, 188, 1);
+  border-radius: 10px;
+  background-color: #fff;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 14px;
+  line-height: 28px;
+  color: rgba(45, 150, 188, 1);
+}
+
+.primary-outline-btn:hover {
+  border: 1px solid rgba(45, 150, 188, 1);
+  background-color: rgba(45, 150, 188, .1);
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 14px;
+  line-height: 28px;
+  color: rgba(45, 150, 188, 1);
+}
+
+.login-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.hero-section {
+  background-image: url('/public/images/hero-banner.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* min-height:90vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.hero-section .subheading {
+  background-color: #fff;
+  border: 0.85px solid rgba(154, 204, 255, 1);
+  border-radius: 20px;
+  padding: 7px 10px;
+  display: inline-flex;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 13.62px;
+  line-height: 23.83px;
+  color: rgba(99, 101, 126, 1);
+}
+
+.hero-section .heading {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 58px;
+  line-height: 69px;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  color: rgba(18, 18, 18, 1);
+}
+
+.underline-img {
+  background-image: url('/public/images/line.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  padding-bottom: 8px;
+}
+
+.hero-section .heading span {
+  color: rgba(45, 150, 188, 1);
+}
+
+.hero-section .content {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 19px;
+  line-height: 28px;
+  text-align: center;
+  width: 75%;
+  color: rgba(54, 54, 54, 1);
+  margin: 25px auto;
+}
+
+.hero-section .works-with-div {
+  background: linear-gradient(90.37deg, #5ED3FF -12.35%, #6EC6FE 0.67%, #EB65F4 100.24%, #FD58F2 114.28%);
+  color: rgba(46, 46, 46, 1);
+  width: fit-content;
+  padding: 19px 22px;
+  border-radius: 20px;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.ratings-playstore-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 6.67px;
+  background-color: #fff;
+}
+
+.ratings-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.star-icon {
+  width: 14.31px;
+  height: 14.31px;
+  margin-right: 3px;
+}
+
+.chrome-web-store-btn {
+  background-color: rgba(55, 55, 55, 1);
+  color: #fff;
+  border: none;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.chrome-web-store-btn p {
+  color: rgba(255, 255, 255, 1);
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+}
+
+.chrome-web-store-btn small {
+  color: rgba(228, 228, 228, 1);
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+}
+
+.free-trial-btn {
+  background-color: rgba(179, 252, 106, 1);
+  color: rgba(36, 36, 36, 1);
+  border: none;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  color: rgba(36, 36, 36, 1);
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 16px;
+}
+
+@media(max-width:768px) {
+  .ratings {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rating .me-5 {
+    margin-right: 0px !important;
+  }
+}
+
+@media(max-width:992px) {
+  .hero-section .heading {
+    width: 100%;
+  }
+
+  .hero-section .content {
+    width: 100%;
+  }
 }
