@@ -254,6 +254,10 @@ body {
 
 .challenges-section .heading {
   text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: rgba(9, 15, 78, 1);
 }
 
 .challenges-section .challenge-1 {
@@ -401,8 +405,8 @@ body {
   padding: 12px 25px;
 }
 
-.btn-arrow-icon{
-  height:20px;
+.btn-arrow-icon {
+  height: 20px;
 }
 
 .save-hours-img {
@@ -413,65 +417,213 @@ body {
 }
 
 /* How It Works Section */
-.how-works-section{
+.how-works-section {
   background-color: rgba(234, 239, 250, 1);
-  padding:40px 0;
+  padding: 40px 0;
 }
-.how-works-section .heading{
+
+.how-works-section .heading {
   font-family: "Poppins", sans-serif;
   font-size: 36px;
   font-weight: 600;
+  color: rgba(9, 15, 78, 1);
 }
 
-.how-works-section .content{
+.how-works-section .content {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color:rgba(76, 76, 76, 1);
+  color: rgba(76, 76, 76, 1);
 }
 
-.how-works-section .content span{
+.how-works-section .content span {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 600;
-  color:rgba(76, 76, 76, 1);
+  color: rgba(76, 76, 76, 1);
 }
 
-.how-works-section .card{
+.how-works-section .card {
   border-radius: 12px;
-  border:none;
+  border: none;
   /* padding:20px; */
 }
 
-.how-works-section .card-details{
-  padding:20px;
+.how-works-section .lead-crm-card-bg {
+  background: url('/public/images/lead-crm-card-bg.png');
+  background-repeat: no-repeat;
 }
 
-.how-works-section .card .card-index{
+.how-works-section .card-details {
+  padding: 20px;
+}
+
+.how-works-section .card .card-index {
   width: auto;
-  height: 80px;       
-  object-fit: contain; 
+  height: 80px;
+  object-fit: contain;
   display: block;
-  margin: 0 auto 15px; 
+  margin: 0 auto 15px;
 }
 
-.how-works-section .card .card-head{
+.how-works-section .card .card-head {
   font-family: "Exo 2", sans-serif;
   font-weight: 600;
   font-size: 24px;
-  color:rgba(9, 15, 78, 1);
+  color: rgba(9, 15, 78, 1);
   text-align: center;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
-.how-works-section .card .card-content{
+.how-works-section .card .card-content {
   font-family: "Exo 2", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color:rgba(76, 76, 76, 1);
+  color: rgba(76, 76, 76, 1);
+  text-align: center;
+  min-height: 100px;
+}
+
+.how-works-section .card .card-img {
+  height: 210px;
+}
+
+/* Feedback Section */
+.feedback-section {
+  padding: 100px 0;
+}
+
+.feedback-section .heading {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: rgba(9, 15, 78, 1);
+}
+
+.feedback-section .card {
+  background-color: rgba(249, 240, 248, 1);
+  border: 1px solid rgba(238, 239, 255, 0.99);
+  border-radius: 20px;
+}
+
+.feedback-section .card-description {
+  min-height: 230px;
+}
+
+.feedback-section .card .card-content {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(44, 44, 44, 1);
+}
+
+.feedback-section .card .ratings-playstore-icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 6.67px;
+  background-color: #fff;
+}
+
+.feedback-section hr {
+  border-top: 1px solid rgba(122, 122, 122, 0.31);
+}
+
+.feedback-section .avatar-name {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgba(9, 15, 78, 1);
+}
+
+.feedback-section .avatar-location {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(105, 105, 105, 1);
+}
+
+.feedback-section .carousel-icon{
+  border:1px solid rgba(9, 15, 78, 1);
+  background-color: #fff;
+  padding:0;
+  height:40px;
+  width:40px;
+  border-radius: 100%;
+}
+
+.feedback-section .carousel-icon i{
+  color:rgba(9, 15, 78, 1);
+  font-size:15px;
+  font-weight: bold;
+}
+
+.feedback-section .carousel-icon:hover{
+  border:1px solid rgba(9, 15, 78, 1);
+  background-color: rgba(9, 15, 78, 1);
+  padding:0;
+  height:40px;
+  width:40px;
+  border-radius: 100%;
+}
+
+.feedback-section .carousel-icon:hover i{
+  color:#fff;
+}
+/* Sales Solution */
+.sales-solution .heading{
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: rgba(9, 15, 78, 1);
   text-align: center;
 }
 
+.sales-solution .content{
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color:rgba(77, 77, 77, 1);
+  text-align: center;
+}
+
+.sales-solution .nav-link{
+  border:none;
+  border-bottom:1px solid rgba(237, 237, 237, 1);
+}
+
+/* Supported LeadCRM */
+.supported-leadcrm{
+  padding:100px 0;
+}
+.supported-leadcrm .heading{
+    font-family: "Exo 2", sans-serif;
+    font-weight: 600;
+    font-size:36px;
+    color: rgba(9, 15, 78, 1);
+    text-align: center;
+}
+
+.supported-leadcrm .content{
+  font-family: "Exo 2", sans-serif;
+  font-weight:400;
+  font-size:18px;
+  color: rgba(77, 77, 77, 1);
+  text-align: center;
+  width:75%;
+  margin:auto;
+}
+
+/* Join LeadCRM */
+.join-leadcrm{
+  background-color: rgba(234, 239, 250, 1);
+  padding:50px 0 30px 0;
+}
+.join-leadcrm .heading{
+  font-family: "Exo 2", sans-serif;
+  font-weight:600;
+  font-size:36px;
+  color: rgba(9, 15, 78, 1);
+}
 @media(max-width:768px) {
   .ratings {
     display: flex;
@@ -485,14 +637,25 @@ body {
   .save-hours-img {
     display: none;
   }
+
+  .supported-leadcrm .content{
+    width:100%;
+  }
 }
 
 @media(max-width:992px) {
   .hero-section .heading {
     width: 100%;
+    font-size: 29px;
+    line-height: 40px;
   }
 
   .hero-section .content {
     width: 100%;
+  }
+
+  .how-works-section .lead-crm-card-bg {
+    background: none;
+    background-repeat: no-repeat;
   }
 }
