@@ -41,6 +41,10 @@ body {
   margin: 0 10px;
 }
 
+.navbar-nav .nav-link:hover {
+  color: rgba(45, 150, 188, 1) !important;
+}
+
 .primary-btn {
   background-color: rgba(45, 150, 188, 1);
   font-family: "Exo 2", sans-serif;
@@ -81,6 +85,198 @@ body {
 .login-icon {
   height: 20px;
   width: 20px;
+}
+
+/* Mega Dropdown Base */
+.mega-dropdown {
+  position: relative;
+}
+
+.mega-toggle {
+  cursor: pointer;
+}
+
+/* Mega Menu Panel */
+.mega-menu2 {
+  position: absolute;
+  top: 50px;
+  left: 50% !important;
+  transform: translateX(-50%) translateY(10px);
+  width: 330px !important;
+  min-width: auto !important;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0px 25px 60px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease;
+  z-index: 999;
+}
+
+/* Show on hover */
+.mega-dropdown:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0px);
+}
+
+/* Mega Items */
+.mega-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  color: #0d1b58;
+  font-family: "Exo 2", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 18px 10px;
+}
+
+.mega-link .mega-item {
+  padding: 10px;
+  font-size: 14px;
+  font-family: "Exo 2", sans-serif;
+  cursor: pointer;
+  gap: 8px;
+  color: #7A7A7A;
+  transition: 0.2s;
+  margin: 5px 0;
+}
+
+.mega-link .mega-item b {
+  color: #090F4E;
+}
+
+.mega-link .mega-item:hover {
+  background-color: #EAEFFA;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.mega-link li {
+  font-size: 14px;
+  font-family: "Exo 2", sans-serif;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+  transition: 0.2s;
+}
+
+.mega-item img {
+  width: 22px;
+  height: 22px;
+}
+
+.mega-item:hover {
+  background-color: #EAEFFA;
+  border-radius: 10px;
+  padding: 18px 10px;
+}
+
+.dropdown-arrow {
+  font-size: 14px;
+  transition: transform 0.25s ease;
+}
+
+/* Rotate arrow on hover */
+.mega-dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* Parent container */
+.mega-parent {
+  position: relative;
+}
+
+/* Toggle hover behavior */
+.mega-parent:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.nav-item {
+  position: relative;
+}
+
+/* Mega Menu Box */
+.mega-menu {
+  position: absolute;
+  left: -300px;
+  top: 50px;
+  /* transform: translateX(-50%) translateY(10px); */
+  min-width: 1300px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.28s ease;
+  z-index: 999;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Titles */
+.mega-section-title {
+  font-family: "Exo 2", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: rgba(45, 150, 188, 1) !important;
+}
+
+/* Left text */
+.mega-title {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Exo 2", sans-serif;
+}
+
+.mega-description {
+  background-color: #ECFBFF;
+  border-radius: 20px;
+}
+
+.mega-desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* List */
+.mega-links {
+  list-style: none;
+  padding: 0;
+}
+
+.mega-links li {
+  padding: 6px 0;
+  font-size: 14px;
+  font-family: "Exo 2", sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+  transition: 0.2s;
+}
+
+.mega-menu2 .mega-links li:hover {
+  color: #2d96bc;
+  padding-left: 4px;
+}
+
+/* Icons */
+.mega-links i {
+  font-size: 16px;
+  color: #2d96bc;
 }
 
 /* Hero Section */
@@ -586,26 +782,31 @@ body {
   color: rgba(77, 77, 77, 1);
   text-align: center;
 }
+
 .sales-solution .nav-tabs {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin-top:80px;
+  margin-top: 80px;
 }
+
 .sales-solution .nav-tabs .nav-item {
-  flex: 1; 
+  flex: 1;
 }
-.sales-solution .nav-link{
-  border:none;
+
+.sales-solution .nav-link {
+  border: none;
   width: 100%;
   text-align: center;
 }
-.sales-solution .nav-link:hover{
-  border:none;
+
+.sales-solution .nav-link:hover {
+  border: none;
   outline: none;
 }
-.sales-solution .nav-link.active{
-  border:none;
+
+.sales-solution .nav-link.active {
+  border: none;
   border-bottom: 5px solid rgba(9, 15, 78, 1);
 }
 
@@ -614,7 +815,7 @@ body {
   border-bottom: 1px solid rgba(237, 237, 237, 1);
 } */
 
-.sales-solution .red-badge{
+.sales-solution .red-badge {
   background-color: rgba(255, 220, 212, 1);
   color: rgba(255, 76, 81, 1);
   font-family: "Exo 2", sans-serif;
@@ -624,36 +825,41 @@ body {
   padding: 5px 10px;
 }
 
-.sales-solution .card{
+.sales-solution .card {
   background-color: rgba(240, 244, 253, 1);
-  border:none;
+  border: none;
   box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
-  padding:20px;
+  padding: 20px;
 }
-.sales-solution .card .card-heading{
+
+.sales-solution .card .card-heading {
   color: rgba(38, 38, 38, 1);
   font-family: "Exo 2", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
-.sales-solution .card .card-content{
-  color:rgba(9, 119, 55, 1);
+
+.sales-solution .card .card-content {
+  color: rgba(9, 119, 55, 1);
   font-family: "Exo 2", sans-serif;
   font-weight: 600;
   font-size: 18px;
 }
-.sales-solution .card .card-description{
-  color:rgba(77, 77, 77, 1);
+
+.sales-solution .card .card-description {
+  color: rgba(77, 77, 77, 1);
   font-family: "Exo 2", sans-serif;
   font-weight: 400;
   font-size: 20px;
 }
-.sales-solution .card .card-description span{
-  color:rgba(9, 119, 55, 1);
+
+.sales-solution .card .card-description span {
+  color: rgba(9, 119, 55, 1);
   font-family: "Exo 2", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
+
 /* Supported LeadCRM */
 .supported-leadcrm {
   padding: 100px 0;
@@ -855,9 +1061,10 @@ body {
 }
 
 @media(max-width:768px) {
-  .sales-solution .nav-tabs .nav-item{
-    flex:none;
+  .sales-solution .nav-tabs .nav-item {
+    flex: none;
   }
+
   .ratings {
     display: flex;
     flex-direction: column;
@@ -891,4 +1098,54 @@ body {
     background: none;
     background-repeat: no-repeat;
   }
+
+  .mega-menu {
+    position: absolute;
+    left: auto;
+    top: 50px;
+    min-width: auto;
+  }
+
+  .mega-menu2 {
+    position: absolute;
+    top: 50px;
+    left: 25% !important;
+  }
+
+
+  /* Turn collapse into fixed sliding drawer */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    /* No top-to-bottom height animation */
+    width: 80%;
+    /* or 100% if full width */
+    background: #fff;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 111;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.35s ease, opacity 0.35s ease;
+    z-index: 9999;
+  }
+
+  /* When shown — slide from LEFT → RIGHT */
+  .mobile-menu.show {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  /* Hide Bootstrap default animation */
+  .navbar-collapse.collapse {
+    display: block !important;
+  }
+
+  .navbar-collapse.collapsing {
+    height: auto !important;
+    transition: none !important;
+  }
+
 }

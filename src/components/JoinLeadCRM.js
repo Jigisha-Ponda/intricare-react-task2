@@ -2,8 +2,8 @@ import React from 'react'
 
 function JoinLeadCRM() {
     return (
-        <section id="join-leadcrm" class="join-leadcrm position-relative">
-            <div class="container">
+        <section id="join-leadcrm" className="join-leadcrm position-relative">
+            <div className="container">
                 <h5 className="heading">Join Thousands of Professionals Using LeadCRM</h5>
                 <img src="/images/linkdln-powerhouse.png" alt="join-leadcrm" className="img-fluid mt-4" />
                 <div className="text-center mt-5">

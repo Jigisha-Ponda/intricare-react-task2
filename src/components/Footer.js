@@ -11,7 +11,7 @@ function Footer() {
                         </a>
                         <p className="footer-description my-4">LeadCRM is LinkedIn integration
                             tool for your CRM.</p>
-                        <div class="d-flex flex-row">
+                        <div className="d-flex flex-row">
                             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="me-3">
                                 <img src="/images/facebook.png" alt="Facebook" />
                             </a>
