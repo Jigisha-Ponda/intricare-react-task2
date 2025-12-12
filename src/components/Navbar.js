@@ -6,9 +6,34 @@ function Navbar() {
 
     const toggleMenu = () => setMenuOpen(!menuOpen);
     const closeMenu = () => setMenuOpen(false);
+    const [activeMega, setActiveMega] = useState(null);
+
+    React.useEffect(() => {
+        function handleClickOutside(e) {
+            const menu = document.querySelector(".mobile-menu");
+            const toggler = document.querySelector(".navbar-toggler");
+
+            // Close mobile menu if clicked outside
+            if (menuOpen && menu && !menu.contains(e.target) && !toggler.contains(e.target)) {
+                setMenuOpen(false);
+            }
+
+            // Close mega menu if clicked outside any mega dropdown
+            const megaMenus = document.querySelectorAll(".mega-menu");
+            const toggles = document.querySelectorAll(".mega-toggle");
+
+            if (![...megaMenus, ...toggles].some(el => el.contains(e.target))) {
+                setActiveMega(null);
+            }
+        }
+
+        document.addEventListener("click", handleClickOutside);
+        return () => document.removeEventListener("click", handleClickOutside);
+    }, [menuOpen]);
+
     return (
         <div className="min-h-screen">
-            <nav className="navbar navbar-expand-lg bg-white">
+            <nav className="navbar navbar-expand-lg fixed-top bg-white">
                 <div className="container-fluid position-relative">
 
                     {/* LEFT: Logo */}
@@ -18,7 +43,7 @@ function Navbar() {
 
                     {/* RIGHT: Buttons */}
                     <div className="d-lg-none d-flex gap-2 ms-auto justify-content-center justify-content-lg-end">
-                        <button className="btn primary-btn">Get Your Free Account</button>
+                        <button className="btn primary-btn d-none d-md-block">Get Your Free Account</button>
                         <button className="btn primary-outline-btn">
                             <img src="/images/login-icon.png" alt="login" className="me-2 login-icon" />
                             Login
@@ -51,12 +76,16 @@ function Navbar() {
                         {/* CENTER: Nav Links */}
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li className="nav-item mega-parent">
-                                <div className="nav-link d-flex align-items-center mega-toggle">
-                                    Product <i className="bi bi-caret-down-fill ms-1"></i>
+                                <div className="nav-link d-flex align-items-center mega-toggle" onClick={() =>
+                                    setActiveMega(activeMega === "product" ? null : "product")
+                                }>
+                                    Product   <i
+                                        className={`bi bi-caret-down-fill ms-1 ${activeMega === "product" ? "rotate-arrow" : ""}`}
+                                    ></i>
                                 </div>
 
                                 {/* Mega Menu */}
-                                <div className="mega-menu shadow-lg">
+                                <div className={`mega-menu shadow-lg ${activeMega === "product" ? "show" : ""}`}>
                                     <div className="row g-4">
 
                                         {/* LEFT: Image & Title */}
@@ -226,7 +255,8 @@ function Navbar() {
                                                             <img src="/images/firefox-logo.webp" />
                                                         </div>
                                                         <div className="col-10">
-                                                            <b>Firefox</b><br /> LinkedIn Firefox Extension
+
+                                                            <b>Firefox</b><span className="green-badge ms-2">Coming soon</span><br /> LinkedIn Firefox Extension
                                                         </div>
                                                     </div>
                                                 </li>
@@ -236,7 +266,7 @@ function Navbar() {
                                                             <img src="/images/edge-logo.webp" />
                                                         </div>
                                                         <div className="col-10">
-                                                            <b>Edge</b><br /> LinkedIn Edge Extension
+                                                            <b>Edge</b><span className="green-badge ms-2">Coming soon</span><br /> LinkedIn Edge Extension
                                                         </div>
                                                     </div>
                                                 </li>
@@ -250,18 +280,13 @@ function Navbar() {
                             <li className="nav-item">
                                 <Link className="nav-link active" to="/">Pricing</Link>
                             </li>
-                            {/* <li className="nav-item dropdown">
-                                <button className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                                    Resources
-                                </button>
-                                <ul className="dropdown-menu">
-                                    <li><Link className="dropdown-item" to="/action">Action</Link></li>
-                                    <li><Link className="dropdown-item" to="/another">Another Action</Link></li>
-                                </ul>
-                            </li> */}
                             <li className="nav-item dropdown mega-dropdown">
-                                <div className="nav-link mega-toggle">Resources<i className="bi bi-caret-down-fill dropdown-arrow ms-1"></i></div>
-                                <div className="mega-menu mega-menu2">
+                                <div className="nav-link mega-toggle" onClick={() =>
+                                    setActiveMega(activeMega === "resources" ? null : "resources")
+                                }>Resources<i
+                                    className={`bi bi-caret-down-fill dropdown-arrow ms-1 ${activeMega === "resources" ? "rotate-arrow" : ""}`}
+                                ></i></div>
+                                <div className={`mega-menu mega-menu2 ${activeMega === "resources" ? "show" : ""}`}>
                                     <Link to="/blogs" className="mega-item">
                                         <img src="/images/blog-link.webp" alt="" />
                                         Blogs
@@ -300,8 +325,12 @@ function Navbar() {
                             </li>
 
                             <li className="nav-item dropdown mega-dropdown">
-                                <div className="nav-link mega-toggle">Company<i className="bi bi-caret-down-fill dropdown-arrow ms-1"></i></div>
-                                <div className="mega-menu mega-menu2">
+                                <div className="nav-link mega-toggle" onClick={() =>
+                                    setActiveMega(activeMega === "company" ? null : "company")
+                                }>Company<i
+                                    className={`bi bi-caret-down-fill dropdown-arrow ms-1 ${activeMega === "company" ? "rotate-arrow" : ""}`}
+                                ></i></div>
+                                <div className={`mega-menu mega-menu2 ${activeMega === "company" ? "show" : ""}`}>
                                     <Link to="/blogs" className="mega-item">
                                         <img src="/images/about-us-link.webp" alt="" />
                                         About Us

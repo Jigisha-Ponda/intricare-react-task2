@@ -69,22 +69,22 @@ function App() {
         </div>
       </Router>
 
-    {/* Bottom Floating Wrapper */}
+      {/* Bottom Floating Wrapper */}
       {isVisible && (
-        <div className={`floating-wrapper ${isVisible ? "slide-up" : "slide-down"} d-flex justify-content-center my-3`}>
+        <div className={`floating-wrapper ${isVisible ? "slide-up" : "slide-down"} d-none d-lg-flex justify-content-center my-3`}>
           <div className="floating-box">
 
             {/* Top Row */}
             <div className="top-row d-flex justify-content-between align-items-center p-3 rounded">
 
               {/* Avatars + Text */}
-              <div className="d-flex align-items-center">
+              <div className="d-flex flex-wrap flex-lg-row align-items-center">
                 <div className="avatars d-flex me-2">
                   <img src="/images/user1.png" className="avatar" alt="user1" />
                   <img src="/images/user2.png" className="avatar" alt="user2" />
                   <img src="/images/user3.png" className="avatar" alt="user3" />
                 </div>
-                <h5 className="m-0 heading me-2">
+                <h5 className="m-0 heading me-2 mt-2 mt-lg-0">
                   Join with our Thousands of professionals Now!
                 </h5>
               </div>
