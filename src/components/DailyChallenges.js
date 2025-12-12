@@ -44,7 +44,7 @@ function DailyChallenges() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 mt-4 mt-lg-0">
                         <div className="challenge-2">
                             <img src="/images/challenge2.png" alt="challenge1" className="img-fluid w-100" />
                             <div className="d-flex flex-row align-items-center mt-3">
