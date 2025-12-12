@@ -8,6 +8,7 @@ import FeedbackSection from "./components/FeedbackSection";
 import SalesSolution from "./components/SalesSolution";
 import SupportedLeadCRM from "./components/SupportedLeadCRM";
 import JoinLeadCRM from "./components/JoinLeadCRM";
+import Footer from "./components/Footer";
 
 function FigmaDesign() {
   return (
@@ -21,6 +22,7 @@ function FigmaDesign() {
       <SalesSolution/>
       <SupportedLeadCRM/>
       <JoinLeadCRM/>
+      <Footer/>
     </div>
   );
 }
